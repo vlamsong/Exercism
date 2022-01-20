@@ -77,7 +77,7 @@ export function canFreePrisoner(
     return true;
   }
 
-  if (prisonerIsAwake && (knightIsAwake && archerIsAwake)) {
+  if (prisonerIsAwake && (!knightIsAwake && !archerIsAwake)) {
     return true;
   } else {
     return false;
